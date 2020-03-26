@@ -1,0 +1,50 @@
+MERN STACK
+
+Keep all UI in a folder called 'Client'
+1. npm init [entry point : server.js]
+2. npm i express dotenv mongoose colors morgan
+
+    Mongoose - Object data map layer + Layer to interact with the Db (Queries)
+    MongoDB Atlas - Cloud version of Mongo DB
+    Colors - Colored Text in the console
+    Morgan - What message and routes are hit in the Console.
+   
+
+3.  node i -D nodemon concurrently
+
+    Nodemon - Constantly run server without restarting 
+    Concurrently - Backend server at 5000 and react frontend server at 3000 with one single npm script SIMULTAEOUSLY
+
+4. Edit Scripts in package.json
+
+5. Create server.js
+
+6. Create config/config.env
+
+7. Check on Postman if the basic server is working for GET requests
+
+8. Create GET POST DELETE operations
+
+9. Create a cluster on MongoDB Atlas 
+    Create cluster
+    Click collection
+    Create database
+    Connect to your application
+    Copy link and paste it in your config.env
+    In the oconnection string, Replace password by your actual password
+    Replace "test" by the database name (expensetracker)
+    
+10. Create Routes folder. Create file api.js.
+    Defines various endpoints(get, post ,delete) basically operations which the app will depend upon
+
+11.Create Models folder. Create file todo.js.
+    models because mongodb because nosql db because schema interface.
+    Schema - blueprint of the db. 
+    To create schema we need mongoose
+
+12. After creating models, update routes
+        (Optional but reccomended) Create controllers folder if needed. Create new file and export both files to link them.
+        In get, post and delete methods, write async await functions OR then-catch blocks
+        These functions will perform actions
+
+13. 
